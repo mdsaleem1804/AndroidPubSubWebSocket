@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grdSingleRoom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="2"
+    android:background="#ffffff"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="Device"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="Room Id"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="Temperature"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="Status"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="Fan Speed"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="Privacy"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="Status"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:id="@+id/txtRoomId"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="1"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <EditText
+        android:id="@+id/edtLightStatus"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="1" />
+    <Switch
+        android:id="@+id/switchPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+
+
+
+    <Spinner
+        android:id="@+id/spnFanSpeed"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <Button
+        android:id="@+id/btnSaveRoom"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:text="SAVE" />
+
+
+</GridLayout>

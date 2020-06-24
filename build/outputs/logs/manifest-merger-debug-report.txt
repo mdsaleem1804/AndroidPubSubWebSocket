@@ -1,0 +1,124 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-33:12
+MERGED from [com.amazonaws:aws-android-sdk-iot:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\2d2eff899597b1bb5a94d037abbbfb60\AndroidManifest.xml:1:1-4:12
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\05eff9daafe0401022fa0364d2155dbf\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:17:1-24:12
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\d4ccbb6d88f7a6c8dcef55c87f770ee4\AndroidManifest.xml:2:1-4:12
+MERGED from [org.conscrypt:conscrypt-android:2.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\aed3d9a208739dfc12fc44fbc8cf8e28\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\c523b0670def7f7418f80883c967d4e7\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\156769043bbde05dafe0eed1dd3c3609\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:3:5-56
+	android:versionName
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:8:5-67
+MERGED from [com.amazonaws:aws-android-sdk-iot:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\2d2eff899597b1bb5a94d037abbbfb60\AndroidManifest.xml:3:5-66
+MERGED from [com.amazonaws:aws-android-sdk-iot:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\2d2eff899597b1bb5a94d037abbbfb60\AndroidManifest.xml:3:5-66
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\05eff9daafe0401022fa0364d2155dbf\AndroidManifest.xml:4:5-66
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\05eff9daafe0401022fa0364d2155dbf\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:10:5-79
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\05eff9daafe0401022fa0364d2155dbf\AndroidManifest.xml:5:5-78
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.16.12] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\05eff9daafe0401022fa0364d2155dbf\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:12:22-77
+application
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:15:5-31:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:22:5-94
+MERGED from [org.conscrypt:conscrypt-android:2.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\aed3d9a208739dfc12fc44fbc8cf8e28\AndroidManifest.xml:11:5-20
+MERGED from [org.conscrypt:conscrypt-android:2.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\aed3d9a208739dfc12fc44fbc8cf8e28\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\c523b0670def7f7418f80883c967d4e7\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\c523b0670def7f7418f80883c967d4e7\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:18:9-41
+	android:icon
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:17:9-45
+	android:allowBackup
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:16:9-35
+activity#com.amazonaws.demo.androidpubsubwebsocket.SplashActivity
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:19:9-25:20
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:19:19-90
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:23:27-74
+activity#com.amazonaws.demo.androidpubsubwebsocket.PubSubActivity
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:26:9-92
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:26:19-90
+activity#com.amazonaws.demo.androidpubsubwebsocket.HomePage
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:27:9-86
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:27:19-84
+activity#com.amazonaws.demo.androidpubsubwebsocket.RoomList
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:28:9-86
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:28:19-84
+activity#com.amazonaws.demo.androidpubsubwebsocket.SingleRoom
+ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:29:9-88
+	android:name
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml:29:19-86
+uses-sdk
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\ea41231d3c965161c7e76332a0cd0883\AndroidManifest.xml:20:5-44
+MERGED from [org.conscrypt:conscrypt-android:2.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\aed3d9a208739dfc12fc44fbc8cf8e28\AndroidManifest.xml:7:5-9:41
+MERGED from [org.conscrypt:conscrypt-android:2.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\aed3d9a208739dfc12fc44fbc8cf8e28\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\c523b0670def7f7418f80883c967d4e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\c523b0670def7f7418f80883c967d4e7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\156769043bbde05dafe0eed1dd3c3609\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Welcome\.gradle\caches\transforms-2\files-2.1\156769043bbde05dafe0eed1dd3c3609\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		ADDED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
+		INJECTED from C:\Users\Welcome\Downloads\AndroidPubSubWebSocket13062020\AndroidPubSubWebSocket\AndroidManifest.xml
