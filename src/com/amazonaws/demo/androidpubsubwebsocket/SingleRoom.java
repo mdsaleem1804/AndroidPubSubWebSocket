@@ -1,30 +1,26 @@
 package com.amazonaws.demo.androidpubsubwebsocket;
-
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttClientStatusCallback;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttManager;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttNewMessageCallback;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttQos;
 import com.amazonaws.regions.Regions;
-
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,24 +31,35 @@ public class SingleRoom extends Activity {
     private static final String CUSTOMER_SPECIFIC_ENDPOINT = "a1bdwfs1su6bdu-ats.iot.ap-southeast-1.amazonaws.com";
     private static final String COGNITO_POOL_ID = "ap-southeast-1:87280ba9-2ff1-454e-88ac-1fb47b443d46";
     private static final Regions MY_REGION = Regions.AP_SOUTHEAST_1;
-    EditText txtSubscribe;
+    EditText edtTemperature;
     TextView tvStatus;
-    Button btnSaveRoom;
-    public Switch switchPrivacy;
+    Button btnSubscribe,btnPublish;
+    SeekBar seekHumidity;
+    public Switch xSwitchPrivacy,xSwitchMakeUpRoom,xSwitchButlerCall,xSwitchOccupancy,xSwitchMotion,xSwitchDoor,xSwitchWindow;
     public Spinner spnFanSpeed;
     AWSIotMqttManager mqttManager;
     String clientId;
     CognitoCachingCredentialsProvider credentialsProvider;
+    static final String LOG_TAG = PubSubActivity.class.getCanonicalName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_room);
-        txtSubscribe = (EditText) findViewById(R.id.edtLightStatus);
+        edtTemperature = (EditText) findViewById(R.id.edtTemperature);
         tvStatus = (TextView) findViewById(R.id.tvStatus);
-        btnSaveRoom = (Button) findViewById(R.id.btnSaveRoom);
-        switchPrivacy= (Switch) findViewById(R.id.switchPrivacy);
+        btnSubscribe = (Button) findViewById(R.id.btnSubscribe);
+        btnPublish = (Button) findViewById(R.id.btnPublish);
+        xSwitchPrivacy= (Switch) findViewById(R.id.switchPrivacy);
+        xSwitchMakeUpRoom= (Switch) findViewById(R.id.switchMakeUpRoom);
+        xSwitchButlerCall= (Switch) findViewById(R.id.switchButlerCall);
+        xSwitchOccupancy= (Switch) findViewById(R.id.switchOccupancy);
+        xSwitchMotion= (Switch) findViewById(R.id.switchMotion);
+        xSwitchDoor= (Switch) findViewById(R.id.switchDoor);
+        xSwitchWindow= (Switch) findViewById(R.id.switchWindow);
+        seekHumidity= (SeekBar) findViewById(R.id.seekHumidity);
+        seekHumidity.setBackgroundColor(Color.GREEN);
         spnFanSpeed= findViewById(R.id.spnFanSpeed);
-        final TextView txtRoomId = findViewById(R.id.txtRoomId);
+        final TextView txtRoomId = findViewById(R.id.txtRoom);
         List<String> xFanList = new ArrayList<String>();
         xFanList.add("0");
         xFanList.add("1");
@@ -76,19 +83,43 @@ public class SingleRoom extends Activity {
         // MQTT Client
         mqttManager = new AWSIotMqttManager(clientId, CUSTOMER_SPECIFIC_ENDPOINT);
         // The following block uses a Cognito credentials provider for authentication with AWS IoT.
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(),"Conneced-Main", Toast.LENGTH_SHORT).show();
 
-                    }
-                });
+        ConnectAWS();
+
+        btnSubscribe.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                final String topic = "Test";
+                Toast.makeText(getApplicationContext(),"Subscribe button clicked", Toast.LENGTH_SHORT).show();
+                try {
+                    mqttManager.subscribeToTopic(topic, AWSIotMqttQos.QOS0,
+                            new AWSIotMqttNewMessageCallback() {
+                                @Override
+                                public void onMessageArrived(final String topic, final byte[] data) {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            try {
+                                                String message = new String(data, "UTF-8");
+                                                ReadJsonData(message);
+                                                Toast.makeText(getApplicationContext(),"Subscribed", Toast.LENGTH_SHORT).show();
+                                               // edtTemperature.setText(message);
+
+                                            } catch (UnsupportedEncodingException | JSONException e) {
+                                                Log.e(LOG_TAG, "Message encoding error.", e);
+                                            }
+                                        }
+                                    });
+                                }
+                            });
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Subscription error.", e);
+                }
+
             }
-        }).start();
-        btnSaveRoom.setOnClickListener( new View.OnClickListener() {
+        });
+        btnPublish.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -98,33 +129,30 @@ public class SingleRoom extends Activity {
             }
         });
 
-        ConnectAWS();
+     seekHumidity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int progressChangedValue = 0;
 
-        GetAWSSubscribe("Test");
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                progressChangedValue = progress;
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // TODO Auto-generated method stub
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                Toast.makeText(SingleRoom.this, "Seek bar progress is :" + progressChangedValue,
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    private void GetAWSSubscribe(String  xTopic){
-        try {
-            mqttManager.subscribeToTopic(xTopic, AWSIotMqttQos.QOS0,
-                    new AWSIotMqttNewMessageCallback() {
-                        @Override
-                        public void onMessageArrived(final String topic, final byte[] data) {
-                            runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    try {
-                                        String message = new String(data, "UTF-8");
-                                        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
-                                    } catch (UnsupportedEncodingException e) {
-                                    }
-                                }
-                            });
-                        }
-                    });
-        } catch (Exception e) {
 
-        }
+    public void ReadJsonData(String xSubscribedData) throws JSONException {
+        JSONObject  jsonObject = new JSONObject(xSubscribedData);
+        edtTemperature.setText(jsonObject.getString("Room"));
     }
+
     private void ConnectAWS(){
         try {
             mqttManager.connect(credentialsProvider, new AWSIotMqttClientStatusCallback() {
@@ -168,26 +196,21 @@ public class SingleRoom extends Activity {
 
     }
     private String  GenerateJsonData(){
-        String  xSwitchPrivacy;
-        if (switchPrivacy.isChecked())
-            xSwitchPrivacy = switchPrivacy.getTextOn().toString();
-        else
-            xSwitchPrivacy = switchPrivacy.getTextOff().toString();
 
         JSONObject data1 = new JSONObject();
         try {
             data1.put("Room", "1001");//Room Number 1 to 99999 String
             data1.put("Temperature", "10");//16 to 30*C
             data1.put("FanSpeed", spnFanSpeed.getSelectedItem().toString());// 0 Off, 1, low, 2, Med, 3 High, 4 Auto
-            data1.put("Humidity", "68");//10 to 99
+            data1.put("Humidity", seekHumidity.getProgress());//10 to 99
             data1.put("SetTemperatue", "20");//16 to 30*C
-            data1.put("Privacy", xSwitchPrivacy);//0 Off or 1 On
-            data1.put("makeUpRoom", xSwitchPrivacy);//0 Off or 1 On
-            data1.put("butlerCall", xSwitchPrivacy);//0 Off or 1 On
-            data1.put("Occupancy", xSwitchPrivacy);//0 vacant or 1 occupied
-            data1.put("Motion", xSwitchPrivacy); //0 no or 1 yes
-            data1.put("Door"   ,"0"); //0 close or 1 open
-            data1.put("Window" ,"0"); //0 close or 1 open
+            data1.put("Privacy", boolToInt(xSwitchPrivacy.isChecked()));//0 Off or 1 On
+            data1.put("MakeUpRoom", boolToInt(xSwitchMakeUpRoom.isChecked()));//0 Off or 1 On
+            data1.put("ButlerCall", boolToInt(xSwitchButlerCall.isChecked()));//0 Off or 1 On
+            data1.put("Occupancy", boolToInt(xSwitchOccupancy.isChecked()));//0 vacant or 1 occupied
+            data1.put("Motion", boolToInt(xSwitchMotion.isChecked())); //0 no or 1 yes
+            data1.put("Door"   ,boolToInt(xSwitchDoor.isChecked())); //0 close or 1 open
+            data1.put("Window" ,boolToInt(xSwitchWindow.isChecked())); //0 close or 1 open
             data1.put("Master" ,"0"); //0 off or 1 on
             data1.put("Switch1","0");
             data1.put("Switch2","0");
@@ -211,5 +234,8 @@ public class SingleRoom extends Activity {
         //JSONObject studentsObj = new JSONObject();
         //studentsObj.put("Students", jsonArray);
 
+    }
+    public int boolToInt(boolean b) {
+        return b ? 1 : 0;
     }
 }

@@ -7,7 +7,7 @@
     android:layout_columnSpan="2"
     android:background="#ffffff"
     android:padding="20dp">
-
+    <!-- Row 0 Start! -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="148dp"
@@ -18,56 +18,6 @@
         android:textSize="22dp"
         android:textStyle="bold|italic" />
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:text="Room Id"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_row="2"
-        android:layout_column="0"
-        android:text="Temperature"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/tvStatus"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_row="7"
-        android:layout_column="0"
-        android:text="Status"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_row="4"
-        android:layout_column="0"
-        android:text="Fan Speed"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_row="3"
-        android:layout_column="0"
-        android:text="Privacy"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
-
-    <TextView
         android:id="@+id/textView8"
         android:layout_width="148dp"
         android:layout_height="31dp"
@@ -77,9 +27,20 @@
         android:textSize="22dp"
         android:textStyle="bold|italic" />
 
+    <!-- Row 0 End!-->
 
+    <!-- Row 1 Start! -->
     <TextView
-        android:id="@+id/txtRoomId"
+        android:id="@+id/textView20"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="Room"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/txtRoom"
         android:layout_width="148dp"
         android:layout_height="31dp"
         android:layout_row="1"
@@ -87,8 +48,19 @@
         android:text="1"
         android:textSize="22dp"
         android:textStyle="bold|italic" />
+    <!-- Row 1 End!-->
+    <!-- Row 2 Start! -->
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="Temperature"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
     <EditText
-        android:id="@+id/edtLightStatus"
+        android:id="@+id/edtTemperature"
         android:layout_width="191dp"
         android:layout_height="wrap_content"
         android:layout_row="2"
@@ -96,34 +68,255 @@
         android:ems="10"
         android:inputType="textPersonName"
         tools:text="1" />
+    <!-- Row 2 End!-->
+    <!-- Row 3 Start! -->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="Fan Speed"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spnFanSpeed"
+        android:layout_width="168dp"
+        android:layout_height="48dp"
+        android:layout_row="3"
+        android:layout_column="1" />
+    <!-- Row 3 End! -->
+    <!-- Row Humidity Start! -->
+    <TextView
+        android:id="@+id/txtHHumidity"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="Humidity"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <SeekBar
+        android:id="@+id/seekHumidity"
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:max="10"
+        android:ems="10" />
+
+    <!-- Row Humidity End!-->
+    <!-- Row SetTemperature Start! -->
+    <TextView
+        android:id="@+id/txtHSetTemperature"
+        android:layout_width="180dp"
+        android:layout_height="31dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="SetTemperature"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edtSetTemperature"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="1" />
+    <!-- Row Humidity End!-->
+
+    <!-- Row Privacy Start! -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:text="Privacy"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
     <Switch
         android:id="@+id/switchPrivacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:layout_row="6"
         android:textColor="#f00"
         android:textSize="25sp"
         android:textOff="Off"
         android:textOn="On"
         android:layout_column="1" />
+    <!-- Row Privacy End! -->
 
-
-
-    <Spinner
-        android:id="@+id/spnFanSpeed"
-        android:layout_width="202dp"
-        android:layout_height="48dp"
-        android:layout_row="4"
+    <!-- Row MakeUpRoom Start! -->
+    <TextView
+        android:id="@+id/txtHMakeUpRoom"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="MakeUpRoom"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchMakeUpRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
         android:layout_column="1" />
+    <!-- Row MakeUpRoom End! -->
+    <!-- Row ButlerCall Start! -->
+    <TextView
+        android:id="@+id/txtHButlerCall"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:text="ButlerCall"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchButlerCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+    <!-- Row ButlerCall End! -->
+
+    <!-- Row Occupancy Start! -->
+    <TextView
+        android:id="@+id/txtHOccupancy"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="9"
+        android:layout_column="0"
+        android:text="Occupancy"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchOccupancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="9"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+    <!-- Row Occupancy End! -->
+
+    <!-- Row Motion Start! -->
+    <TextView
+        android:id="@+id/txtHMotion"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="10"
+        android:layout_column="0"
+        android:text="Motion"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchMotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="10"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+    <!-- Row Motion End! -->
+    <!-- Row Door Start! -->
+    <TextView
+        android:id="@+id/txtHDoor"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="11"
+        android:layout_column="0"
+        android:text="Door"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="11"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+    <!-- Row Door End! -->
+
+    <!-- Row Window Start! -->
+    <TextView
+        android:id="@+id/txtHWindow"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="12"
+        android:layout_column="0"
+        android:text="Window"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+    <Switch
+        android:id="@+id/switchWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="12"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_column="1" />
+    <!-- Row Door End! -->
+    <!-- Row Button Start! -->
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_row="18"
+        android:layout_column="0"
+        android:text="Status"
+        android:textSize="22dp"
+        android:textColor="@color/Red"
+        android:textStyle="bold|italic" />
 
     <Button
-        android:id="@+id/btnSaveRoom"
-        android:layout_width="369dp"
+        android:id="@+id/btnPublish"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
-        android:layout_row="6"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:text="SAVE" />
+        android:layout_row="18"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:background="@color/LightGreen"
+        android:text="PUBLISH"
+        android:textColor="@color/Red" />
 
+    <Button
+        android:id="@+id/btnSubscribe"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_row="13"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:background="@color/LightGreen"
+        android:text="SUBSCRIBE"
+        android:textColor="@color/Red" />
+
+
+    <!-- Row Button End! -->
 
 </GridLayout>

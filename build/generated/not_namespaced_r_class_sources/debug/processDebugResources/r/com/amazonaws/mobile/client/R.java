@@ -18,8 +18,8 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int ripple_material_light = 0x7f020002;
-        public static final int secondary_text_default_material_light = 0x7f020003;
+        public static final int ripple_material_light = 0x7f02008e;
+        public static final int secondary_text_default_material_light = 0x7f02008f;
     }
     public static final class dimen {
         private dimen() {}
@@ -37,18 +37,18 @@ public final class R {
         private id() {}
 
         public static final int action_divider = 0x7f050001;
-        public static final int chronometer = 0x7f05000c;
+        public static final int chronometer = 0x7f05000b;
         public static final int icon = 0x7f050010;
         public static final int info = 0x7f050012;
         public static final int large = 0x7f050014;
         public static final int line1 = 0x7f050015;
         public static final int line3 = 0x7f050016;
         public static final int normal = 0x7f050018;
-        public static final int small = 0x7f050022;
-        public static final int text = 0x7f050028;
-        public static final int text2 = 0x7f050029;
-        public static final int time = 0x7f050030;
-        public static final int title = 0x7f050031;
+        public static final int small = 0x7f050023;
+        public static final int text = 0x7f05002f;
+        public static final int text2 = 0x7f050030;
+        public static final int time = 0x7f050037;
+        public static final int title = 0x7f050038;
     }
     public static final class integer {
         private integer() {}

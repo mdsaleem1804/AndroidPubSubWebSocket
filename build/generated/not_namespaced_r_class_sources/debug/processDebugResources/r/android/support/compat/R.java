@@ -28,10 +28,10 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f020000;
-        public static final int notification_icon_bg_color = 0x7f020001;
-        public static final int ripple_material_light = 0x7f020002;
-        public static final int secondary_text_default_material_light = 0x7f020003;
+        public static final int notification_action_color_filter = 0x7f02008c;
+        public static final int notification_icon_bg_color = 0x7f02008d;
+        public static final int ripple_material_light = 0x7f02008e;
+        public static final int secondary_text_default_material_light = 0x7f02008f;
     }
     public static final class dimen {
         private dimen() {}
@@ -85,7 +85,7 @@ public final class R {
         public static final int actions = 0x7f050004;
         public static final int async = 0x7f050005;
         public static final int blocking = 0x7f050006;
-        public static final int chronometer = 0x7f05000c;
+        public static final int chronometer = 0x7f05000b;
         public static final int forever = 0x7f05000e;
         public static final int icon = 0x7f050010;
         public static final int icon_group = 0x7f050011;
@@ -99,13 +99,13 @@ public final class R {
         public static final int notification_main_column_container = 0x7f05001b;
         public static final int right_icon = 0x7f05001c;
         public static final int right_side = 0x7f05001d;
-        public static final int tag_transition_group = 0x7f050025;
-        public static final int tag_unhandled_key_event_manager = 0x7f050026;
-        public static final int tag_unhandled_key_listeners = 0x7f050027;
-        public static final int text = 0x7f050028;
-        public static final int text2 = 0x7f050029;
-        public static final int time = 0x7f050030;
-        public static final int title = 0x7f050031;
+        public static final int tag_transition_group = 0x7f05002c;
+        public static final int tag_unhandled_key_event_manager = 0x7f05002d;
+        public static final int tag_unhandled_key_listeners = 0x7f05002e;
+        public static final int text = 0x7f05002f;
+        public static final int text2 = 0x7f050030;
+        public static final int time = 0x7f050037;
+        public static final int title = 0x7f050038;
     }
     public static final class integer {
         private integer() {}
