@@ -23,6 +23,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
@@ -91,7 +92,7 @@ public class SingleRoom extends Activity {
             @Override
             public void onClick(View v) {
                 final String topic = "Test";
-                Toast.makeText(getApplicationContext(),"Subscribe button clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Subscribe Method Called", Toast.LENGTH_SHORT).show();
                 try {
                     mqttManager.subscribeToTopic(topic, AWSIotMqttQos.QOS0,
                             new AWSIotMqttNewMessageCallback() {
@@ -103,10 +104,8 @@ public class SingleRoom extends Activity {
                                             try {
                                                 String message = new String(data, "UTF-8");
                                                 ReadJsonData(message);
-                                                Toast.makeText(getApplicationContext(),"Subscribed", Toast.LENGTH_SHORT).show();
-                                               // edtTemperature.setText(message);
-
-                                            } catch (UnsupportedEncodingException | JSONException e) {
+                                                Toast.makeText(getApplicationContext(),"Data Recieved", Toast.LENGTH_SHORT).show();
+                                            } catch (UnsupportedEncodingException | JSONException e ) {
                                                 Log.e(LOG_TAG, "Message encoding error.", e);
                                             }
                                         }
@@ -116,7 +115,6 @@ public class SingleRoom extends Activity {
                 } catch (Exception e) {
                     Log.e(LOG_TAG, "Subscription error.", e);
                 }
-
             }
         });
         btnPublish.setOnClickListener( new View.OnClickListener() {
@@ -147,10 +145,27 @@ public class SingleRoom extends Activity {
         });
     }
 
-
     public void ReadJsonData(String xSubscribedData) throws JSONException {
-        JSONObject  jsonObject = new JSONObject(xSubscribedData);
-        edtTemperature.setText(jsonObject.getString("Room"));
+
+        JSONArray jArr = new JSONArray(xSubscribedData);
+
+        for (int count = 0; count < jArr.length(); count++) {
+            JSONObject obj = jArr.getJSONObject(count);
+            String name = obj.getString("Room");
+            edtTemperature.setText(obj.getString("Temperature"));
+            String xData=obj.getString("Privacy");
+            if(obj.getString("Privacy").equals("1"))
+              xSwitchPrivacy.setChecked(true);
+            if(obj.getString("MakeUpRoom").equals("1"))
+                xSwitchMakeUpRoom.setChecked(true);
+            if(obj.getString("ButlerCall").equals("1"))
+                xSwitchButlerCall.setChecked(true);
+            if(obj.getString("Occupancy").equals("1"))
+                xSwitchOccupancy.setChecked(true);
+            if(obj.getString("Motion").equals("1"))
+                xSwitchMotion.setChecked(true);
+
+        }
     }
 
     private void ConnectAWS(){

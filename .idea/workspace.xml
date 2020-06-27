@@ -15,8 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0cec03-9687-465c-aaeb-205724cf9e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -24,79 +22,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AndroidPubSubWebSocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidPubSubWebSocket.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/compat/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/demo/androidpubsubwebsocket/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/demo/androidpubsubwebsocket/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/mobile/auth/core/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/mobile/auth/core/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/mobile/client/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/amazonaws/mobile/client/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/iMGtgQtMSGSsPcuJAJ_z0aQvaUc=" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/iMGtgQtMSGSsPcuJAJ_z0aQvaUc=" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/android/support/compat/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$dimen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$dimen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$integer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$raw.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$raw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$string.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$style.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$styleable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/R$styleable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/auth/core/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/auth/core/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/client/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/client/R$color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/client/R$id.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/amazonaws/mobile/client/R$id.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_homepage.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_homepage.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_single_room.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout_single_room.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/android/support/compat/R$color.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/android/support/compat/R$color.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/android/support/compat/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/android/support/compat/R$id.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/HomePage.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/HomePage.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$color.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$color.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$dimen.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$dimen.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$drawable.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$id.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$integer.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$integer.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$layout.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$layout.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$raw.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$raw.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$string.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$style.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$style.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$styleable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/R$styleable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3$1.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4$1.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom$4.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/auth/core/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/auth/core/R$id.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/client/R$color.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/client/R$color.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/client/R$id.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/0/com/amazonaws/mobile/client/R$id.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/outputs/apk/debug/AndroidPubSubWebSocket-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/outputs/apk/debug/AndroidPubSubWebSocket-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/homepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/homepage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/layout/single_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/single_room.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,13 +100,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="PRDETKPBCQHQNVIR" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-24T07:23:16.080Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-26T01:05:06.882Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="LAYOUT" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="E:/AndroidSDK" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/res/drawable" />
     <property name="recommended.upgrade.last.time.stamp" value="1592962760899" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -314,30 +261,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="474" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1592923248039" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1592198492457">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="347" y="119" key="FileChooserDialogImpl" timestamp="1593015794923">
+      <screen x="0" y="0" width="1024" height="728" />
     </state>
+    <state x="347" y="119" key="FileChooserDialogImpl/0.0.1024.728@0.0.1024.728" timestamp="1593015794923" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592198492457" />
-    <state width="981" height="138" key="GridCell.Tab.0.bottom" timestamp="1592993264699">
+    <state width="981" height="150" key="GridCell.Tab.0.bottom" timestamp="1593166381435">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="138" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1592993264699" />
-    <state width="1323" height="138" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592923624392" />
-    <state width="981" height="138" key="GridCell.Tab.0.center" timestamp="1592993264698">
+    <state width="981" height="150" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1593166381435" />
+    <state width="1323" height="151" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593134629113" />
+    <state width="981" height="150" key="GridCell.Tab.0.center" timestamp="1593166381435">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="138" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1592993264698" />
-    <state width="1323" height="138" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592923624392" />
-    <state width="981" height="138" key="GridCell.Tab.0.left" timestamp="1592993264698">
+    <state width="981" height="150" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1593166381435" />
+    <state width="1323" height="151" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593134629113" />
+    <state width="981" height="150" key="GridCell.Tab.0.left" timestamp="1593166381435">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="138" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1592993264698" />
-    <state width="1323" height="138" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592923624391" />
-    <state width="981" height="138" key="GridCell.Tab.0.right" timestamp="1592993264698">
+    <state width="981" height="150" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1593166381435" />
+    <state width="1323" height="151" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593134629112" />
+    <state width="981" height="150" key="GridCell.Tab.0.right" timestamp="1593166381435">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="138" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1592993264698" />
-    <state width="1323" height="138" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592923624392" />
+    <state width="981" height="150" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1593166381435" />
+    <state width="1323" height="151" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593134629113" />
     <state width="981" height="138" key="GridCell.Tab.1.bottom" timestamp="1592993262658">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
@@ -358,56 +306,73 @@
     </state>
     <state width="981" height="138" key="GridCell.Tab.1.right/0.0.1024.728@0.0.1024.728" timestamp="1592993262658" />
     <state width="1323" height="138" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592923624393" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1592227326873">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="26" y="6" key="SettingsEditor" timestamp="1593014694750">
+      <screen x="0" y="0" width="1024" height="728" />
     </state>
+    <state x="26" y="6" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1593014694750" />
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592227326873" />
     <state x="74" y="77" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1592736325670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="69" y="92" width="887" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1024.728@0.0.1024.728" timestamp="1592099166080" />
     <state x="74" y="77" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1592736325670" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1592997826030">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1593235547329">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1024.728@0.0.1024.728" timestamp="1592997826030" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592961298536" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1024.728@0.0.1024.728" timestamp="1593235547329" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593132931197" />
+    <state x="111" y="100" width="1143" height="574" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593134352063">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="111" y="100" width="1143" height="574" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1593134352063" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1593133960980">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593133960980" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+        <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.java</url>
           <line>41</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+        <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.java</url>
           <line>216</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+        <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.java</url>
           <line>217</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+        <line-breakpoint suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.java</url>
-          <line>191</line>
+          <line>206</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/SingleRoom.java</url>
           <line>152</line>
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
+        <line-breakpoint suspend="THREAD" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/amazonaws/demo/androidpubsubwebsocket/PubSubActivity.java</url>
           <line>126</line>
           <properties class="com.amazonaws.demo.androidpubsubwebsocket.PubSubActivity" method="GetSubscriptionMessageFromTopic" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
