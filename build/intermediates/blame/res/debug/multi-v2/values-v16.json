@@ -4,6 +4,25 @@
             "outputFile": "C:\\Users\\Welcome\\Downloads\\AndroidPubSubWebSocket13062020\\AndroidPubSubWebSocket\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\Welcome\\.gradle\\caches\\transforms-2\\files-2.1\\c777cbd26bd9527c46ed0238ce7d4c6d\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Welcome\\.gradle\\caches\\transforms-2\\files-2.1\\ea41231d3c965161c7e76332a0cd0883\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",

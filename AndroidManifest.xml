@@ -3,7 +3,6 @@
     package="com.amazonaws.demo.androidpubsubwebsocket"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -14,7 +13,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/iot_home_icon"
+        android:theme="@style/Theme.AppCompat.Light"
         android:label="@string/app_name" >
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.SplashActivity" >
             <intent-filter>
@@ -25,7 +25,8 @@
         </activity>
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.PubSubActivity"/>
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.HomePage"/>
-        <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.RoomList"/>
+        <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.RoomList"
+            android:label="LIST OF ROOMS"/>
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.SingleRoom"/>
         
     </application>

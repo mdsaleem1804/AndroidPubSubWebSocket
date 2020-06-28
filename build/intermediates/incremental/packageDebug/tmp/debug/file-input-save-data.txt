@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jun 23 23:10:50 IST 2020
+#Sun Jun 28 11:46:02 IST 2020
 2.base=C\:\\Users\\Welcome\\Downloads\\AndroidPubSubWebSocket13062020\\AndroidPubSubWebSocket\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 0.path=lib/x86/libconscrypt_jni.so
 2.baseType=DIRECTORY

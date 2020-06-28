@@ -1,36 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:padding="20dp"
-   >
+    tools:context="com.amazonaws.demo.androidpubsubwebsocket.RoomList">
 
-    <Button
-        android:id="@+id/room1"
-        android:layout_width="175dp"
-        android:layout_height="121dp"
-        android:text="ROOM1" />
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:footerDividersEnabled="false"
+        android:numColumns="2"/>
 
-    <Button
-        android:id="@+id/room2"
-        android:layout_width="175dp"
-        android:layout_height="121dp"
-        android:layout_row="0"
-        android:layout_column="1"
-        android:text="ROOM2" />
-    <Button
-        android:id="@+id/room3"
-        android:layout_width="175dp"
-        android:layout_height="121dp"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:text="ROOM3" />
-
-    <Button
-        android:id="@+id/room4"
-        android:layout_width="175dp"
-        android:layout_height="121dp"
-        android:text="ROOM4" />
-
-</GridLayout>
+</RelativeLayout>

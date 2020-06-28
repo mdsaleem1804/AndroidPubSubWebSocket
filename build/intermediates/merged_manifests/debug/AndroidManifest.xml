@@ -19,9 +19,10 @@
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/iot_home_icon"
         android:label="@string/app_name"
-        android:testOnly="true" >
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.Light" >
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +32,9 @@
         </activity>
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.PubSubActivity" />
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.HomePage" />
-        <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.RoomList" />
+        <activity
+            android:name="com.amazonaws.demo.androidpubsubwebsocket.RoomList"
+            android:label="LIST OF ROOMS" />
         <activity android:name="com.amazonaws.demo.androidpubsubwebsocket.SingleRoom" />
     </application>
 

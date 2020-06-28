@@ -7,9 +7,22 @@
    >
 
     <Button
+        android:layout_marginTop="30dp"
         android:id="@+id/user_reception"
-        android:layout_width="wrap_content"
-        android:layout_height="262dp"
-        android:background="@drawable/service"/>
-        android:text="RECEPTION" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RECEPTION"
+        android:background="@drawable/rounded_corner"
+
+        />
+    <Button
+        android:id="@+id/user_admin"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/user_reception"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMIN"
+        android:background="@drawable/rounded_corner"
+
+        />
 </RelativeLayout>

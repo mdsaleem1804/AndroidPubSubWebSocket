@@ -39,15 +39,17 @@
         android:text="Room"
         android:textSize="22dp"
         android:textStyle="bold|italic" />
-    <TextView
-        android:id="@+id/txtRoom"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
+
+    <EditText
+        android:id="@+id/edtRoom"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="1"
-        android:text="1"
-        android:textSize="22dp"
-        android:textStyle="bold|italic" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="1" />
+
     <!-- Row 1 End!-->
     <!-- Row 2 Start! -->
     <TextView

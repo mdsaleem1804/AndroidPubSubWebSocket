@@ -1,7 +1,10 @@
 package com.amazonaws.demo.androidpubsubwebsocket;
-import android.app.Activity;
-import android.graphics.Color;
+
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,44 +15,50 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttClientStatusCallback;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttManager;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttNewMessageCallback;
 import com.amazonaws.mobileconnectors.iot.AWSIotMqttQos;
 import com.amazonaws.regions.Regions;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
-public class SingleRoom extends Activity {
+public class SingleRoom extends AppCompatActivity {
 
     private static final String CUSTOMER_SPECIFIC_ENDPOINT = "a1bdwfs1su6bdu-ats.iot.ap-southeast-1.amazonaws.com";
     private static final String COGNITO_POOL_ID = "ap-southeast-1:87280ba9-2ff1-454e-88ac-1fb47b443d46";
     private static final Regions MY_REGION = Regions.AP_SOUTHEAST_1;
-    EditText edtTemperature;
-    TextView tvStatus;
-    Button btnSubscribe,btnPublish;
-    SeekBar seekHumidity;
+    EditText xEdtRoom,xEdtTemperature,xEdtSetTemperature;
+    TextView xTvStatus;
+    Button xBtnSubscribe,xBtnPublish;
+    SeekBar xSeekHumidity;
     public Switch xSwitchPrivacy,xSwitchMakeUpRoom,xSwitchButlerCall,xSwitchOccupancy,xSwitchMotion,xSwitchDoor,xSwitchWindow;
-    public Spinner spnFanSpeed;
+    public Spinner xSpnFanSpeed;
     AWSIotMqttManager mqttManager;
     String clientId;
     CognitoCachingCredentialsProvider credentialsProvider;
+    ArrayAdapter<String> dataAdapter;
     static final String LOG_TAG = PubSubActivity.class.getCanonicalName();
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_room);
-        edtTemperature = (EditText) findViewById(R.id.edtTemperature);
-        tvStatus = (TextView) findViewById(R.id.tvStatus);
-        btnSubscribe = (Button) findViewById(R.id.btnSubscribe);
-        btnPublish = (Button) findViewById(R.id.btnPublish);
+        xEdtRoom = (EditText) findViewById(R.id.edtRoom);
+        xEdtTemperature = (EditText) findViewById(R.id.edtTemperature);
+        xEdtSetTemperature = (EditText) findViewById(R.id.edtSetTemperature);
+        xTvStatus = (TextView) findViewById(R.id.tvStatus);
+        xBtnSubscribe = (Button) findViewById(R.id.btnSubscribe);
+        xBtnPublish = (Button) findViewById(R.id.btnPublish);
         xSwitchPrivacy= (Switch) findViewById(R.id.switchPrivacy);
         xSwitchMakeUpRoom= (Switch) findViewById(R.id.switchMakeUpRoom);
         xSwitchButlerCall= (Switch) findViewById(R.id.switchButlerCall);
@@ -57,20 +66,18 @@ public class SingleRoom extends Activity {
         xSwitchMotion= (Switch) findViewById(R.id.switchMotion);
         xSwitchDoor= (Switch) findViewById(R.id.switchDoor);
         xSwitchWindow= (Switch) findViewById(R.id.switchWindow);
-        seekHumidity= (SeekBar) findViewById(R.id.seekHumidity);
-        seekHumidity.setBackgroundColor(Color.GREEN);
-        spnFanSpeed= findViewById(R.id.spnFanSpeed);
-        final TextView txtRoomId = findViewById(R.id.txtRoom);
+        xSeekHumidity= (SeekBar) findViewById(R.id.seekHumidity);
+        xSpnFanSpeed= findViewById(R.id.spnFanSpeed);
         List<String> xFanList = new ArrayList<String>();
         xFanList.add("0");
         xFanList.add("1");
         xFanList.add("2");
         xFanList.add("3");
         xFanList.add("4");
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+        dataAdapter= new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, xFanList);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spnFanSpeed.setAdapter(dataAdapter);
+        xSpnFanSpeed.setAdapter(dataAdapter);
 
         clientId = UUID.randomUUID().toString();
 
@@ -86,8 +93,11 @@ public class SingleRoom extends Activity {
         // The following block uses a Cognito credentials provider for authentication with AWS IoT.
 
         ConnectAWS();
+        //Intent intent = getIntent();
+        //String xRoomName = intent.getStringExtra("room_name");
+        //xEdtRoom.setText(xRoomName);
 
-        btnSubscribe.setOnClickListener( new View.OnClickListener() {
+        xBtnSubscribe.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -117,7 +127,7 @@ public class SingleRoom extends Activity {
                 }
             }
         });
-        btnPublish.setOnClickListener( new View.OnClickListener() {
+        xBtnPublish.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -126,8 +136,7 @@ public class SingleRoom extends Activity {
 
             }
         });
-
-     seekHumidity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+     xSeekHumidity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChangedValue = 0;
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -143,28 +152,30 @@ public class SingleRoom extends Activity {
                         Toast.LENGTH_SHORT).show();
             }
         });
+        xBtnSubscribe.setVisibility(View.GONE);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void ReadJsonData(String xSubscribedData) throws JSONException {
 
         JSONArray jArr = new JSONArray(xSubscribedData);
 
         for (int count = 0; count < jArr.length(); count++) {
             JSONObject obj = jArr.getJSONObject(count);
-            String name = obj.getString("Room");
-            edtTemperature.setText(obj.getString("Temperature"));
-            String xData=obj.getString("Privacy");
-            if(obj.getString("Privacy").equals("1"))
-              xSwitchPrivacy.setChecked(true);
-            if(obj.getString("MakeUpRoom").equals("1"))
-                xSwitchMakeUpRoom.setChecked(true);
-            if(obj.getString("ButlerCall").equals("1"))
-                xSwitchButlerCall.setChecked(true);
-            if(obj.getString("Occupancy").equals("1"))
-                xSwitchOccupancy.setChecked(true);
-            if(obj.getString("Motion").equals("1"))
-                xSwitchMotion.setChecked(true);
-
+            xEdtRoom.setText(obj.getString("Room"));
+            xEdtTemperature.setText(obj.getString("Temperature"));
+            int selectionPosition= dataAdapter.getPosition(obj.getString("FanSpeed"));
+            xSpnFanSpeed.setSelection(selectionPosition);
+            xSeekHumidity.setMax(99);
+            xSeekHumidity.setProgress(obj.getInt("Humidity"));
+            xEdtSetTemperature.setText(obj.getString("SetTemperatue"));
+            xSwitchPrivacy.setChecked(obj.getString("Privacy").equals("1") ? true : false);
+            xSwitchMakeUpRoom.setChecked(obj.getString("MakeUpRoom").equals("1") ? true : false);
+            xSwitchButlerCall.setChecked(obj.getString("ButlerCall").equals("1") ? true : false);
+            xSwitchOccupancy.setChecked(obj.getString("Occupancy").equals("1") ? true : false);
+            xSwitchMotion.setChecked(obj.getString("Motion").equals("1") ? true : false);
+            xSwitchDoor.setChecked(obj.getString("Door").equals("1") ? true : false);
+            xSwitchWindow.setChecked(obj.getString("Window").equals("1") ? true : false);
         }
     }
 
@@ -177,22 +188,22 @@ public class SingleRoom extends Activity {
                         @Override
                         public void run() {
                             if (status == AWSIotMqttClientStatus.Connecting) {
-                                tvStatus.setText("Connecting...");
+                                xTvStatus.setText("Connecting...");
 
                             } else if (status == AWSIotMqttClientStatus.Connected) {
-                                tvStatus.setText("Connected");
-
+                                xTvStatus.setText("Connected");
+                                xBtnSubscribe.performClick();
                             } else if (status == AWSIotMqttClientStatus.Reconnecting) {
                                 if (throwable != null) {
                                 }
-                                tvStatus.setText("Reconnecting");
+                                xTvStatus.setText("Reconnecting");
                             } else if (status == AWSIotMqttClientStatus.ConnectionLost) {
                                 if (throwable != null) {
                                     throwable.printStackTrace();
                                 }
-                                tvStatus.setText("Disconnected");
+                                xTvStatus.setText("Disconnected");
                             } else {
-                                tvStatus.setText("Disconnected");
+                                xTvStatus.setText("Disconnected");
 
                             }
                         }
@@ -216,8 +227,8 @@ public class SingleRoom extends Activity {
         try {
             data1.put("Room", "1001");//Room Number 1 to 99999 String
             data1.put("Temperature", "10");//16 to 30*C
-            data1.put("FanSpeed", spnFanSpeed.getSelectedItem().toString());// 0 Off, 1, low, 2, Med, 3 High, 4 Auto
-            data1.put("Humidity", seekHumidity.getProgress());//10 to 99
+            data1.put("FanSpeed", xSpnFanSpeed.getSelectedItem().toString());// 0 Off, 1, low, 2, Med, 3 High, 4 Auto
+            data1.put("Humidity", xSeekHumidity.getProgress());//10 to 99
             data1.put("SetTemperatue", "20");//16 to 30*C
             data1.put("Privacy", boolToInt(xSwitchPrivacy.isChecked()));//0 Off or 1 On
             data1.put("MakeUpRoom", boolToInt(xSwitchMakeUpRoom.isChecked()));//0 Off or 1 On

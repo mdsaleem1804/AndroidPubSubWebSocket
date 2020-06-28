@@ -12,7 +12,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f090000;
-        public static final int package_name = 0x7f090001;
+        public static final int app_name = 0x7f0b0027;
+        public static final int package_name = 0x7f0b0028;
     }
 }
